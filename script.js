@@ -30,6 +30,7 @@ gsap.from(".hero .left h1", {
   ease: "power2.out"
 },"a");
 
+
 gsap.from(".hero .left h2", {
   x: -200,
   duration: 1.2,
@@ -119,13 +120,15 @@ gsap.from("#page4 .flex > div", {
 // Footer Animation
 gsap.from(".footer", {
   scrollTrigger: {
-    trigger: ".footer",
+    trigger: ".container",
     start: "bottom bottom",
     end: "bottom bottom",
     scrub: true
   },
-  y: 50,
+  y: 0,
   duration: 2,
   opacity: 0,
   ease: "power2.out"
 });
+
+// Some animation on clicking the link of scrolling animation
